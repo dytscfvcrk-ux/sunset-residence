@@ -1,0 +1,118 @@
+
+{% extends "base.html" %}
+
+{% block title %}Школа и детский сад — SUNSET RESIDENCE{% endblock %}
+
+{% block content %}
+
+<section class="page-hero education-hero">
+    <div class="breadcrumbs">ГЛАВНАЯ / ШКОЛА И ДЕТСКИЙ САД</div>
+    <div class="section-label">EDUCATION & FAMILY</div>
+    <h1>Будущее начинается<br>с правильной среды.</h1>
+    <p class="section-text">Пространство для развития, открытий и счастливого детства.</p>
+</section>
+
+<section class="section">
+    <div class="grid-2">
+        <div>
+            <div class="section-label">01 / ОБРАЗОВАТЕЛЬНАЯ СРЕДА</div>
+            <h2 class="section-title">Внимание к самому важному.</h2>
+            <p class="section-text">
+                В концепции SUNSET RESIDENCE особое место занимает
+                комфорт семей с детьми. Образовательная среда —
+                это не только занятия, но и возможность исследовать мир,
+                находить друзей и развивать свои способности.
+            </p>
+        </div>
+        <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=85" alt="Современное образовательное пространство">
+        </div>
+    </div>
+</section>
+
+<section class="section education-school">
+    <div class="section-label">02 / ШКОЛА</div>
+    <div class="grid-2">
+        <div class="image-frame">
+<img src="{{ url_for('static', filename='images/sunset-school.png') }}" alt="Школа SUNSET RESIDENCE">
+        </div>
+        <div>
+            <h2 class="section-title">Школа возможностей.</h2>
+            <p class="section-text">
+                Современная архитектура, светлые учебные пространства
+                и функциональные зоны для занятий создают основу
+                комфортной образовательной среды.
+            </p>
+            <ul class="education-list">
+                <li>Просторные учебные классы</li>
+                <li>Зоны для творчества и проектов</li>
+                <li>Пространства для общения и отдыха</li>
+                <li>Спортивная и активная среда</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section education-kindergarten">
+    <div class="section-label">03 / ДЕТСКИЙ САД</div>
+    <div class="grid-2">
+        <div>
+            <h2 class="section-title">Мир первых открытий.</h2>
+            <p class="section-text">
+                Детский сад задуман как тёплое и дружелюбное пространство,
+                где ребёнок может играть, общаться и открывать новое.
+                Интерьерная концепция сочетает натуральные оттенки,
+                безопасные материалы и много естественного света.
+            </p>
+            <ul class="education-list">
+                <li>Игровые и развивающие пространства</li>
+                <li>Творческие мастерские</li>
+                <li>Уютные помещения для отдыха</li>
+                <li>Пространства для активных игр</li>
+            </ul>
+        </div>
+        <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=85" alt="Детская игровая среда">
+        </div>
+    </div>
+</section>
+
+<section class="section education-gallery">
+    <div class="section-heading">
+        <div class="section-label">04 / ПРОСТРАНСТВО ДЕТСТВА</div>
+        <h2 class="section-title">Среда, которая вдохновляет.</h2>
+    </div>
+
+    <div class="grid-3">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=900&q=85" alt="Учебное пространство">
+            <div class="card-content">
+                <h3>Обучение</h3>
+                <p>Место для знаний, исследований и новых идей.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=900&q=85" alt="Детские игры на свежем воздухе">
+            <div class="card-content">
+                <h3>Активность</h3>
+                <p>Возможность двигаться, играть и исследовать.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&q=85" alt="Зелёная территория">
+            <div class="card-content">
+                <h3>Природа</h3>
+                <p>Зелёные пространства и время на свежем воздухе.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-cta">
+    <div class="section-label">SUNSET RESIDENCE</div>
+    <h2>Дом для всей семьи.</h2>
+    <p>Откройте пространство, в котором хочется расти и мечтать.</p>
+    <a href="{{ url_for('apartments') }}" class="btn-primary">ВЫБРАТЬ КВАРТИРУ ↗</a>
+</section>
+
+{% endblock %}

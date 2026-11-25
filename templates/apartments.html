@@ -1,0 +1,205 @@
+
+{% extends "base.html" %}
+
+{% block title %}Выбор квартиры — SUNSET RESIDENCE{% endblock %}
+
+{% block content %}
+
+<section class="page-hero apartments-hero">
+    <div class="breadcrumbs">ГЛАВНАЯ / КВАРТИРЫ</div>
+    <div class="section-label">PRIVATE COLLECTION</div>
+    <h1>Коллекция<br>ваших резиденций.</h1>
+    <p class="section-text">Три пространства. Три характера. Один уровень комфорта.</p>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div class="section-label">01 / ВЫБОР РЕЗИДЕНЦИИ</div>
+        <h2 class="section-title">Найдите пространство своё.</h2>
+        <p class="section-text">
+            Представляем три демонстрационных варианта планировок.
+            Выберите подходящий формат жизни.
+        </p>
+    </div>
+
+    <div class="grid-3 apartment-grid">
+
+    <article class="card apartment-card">
+        <div class="apartment-image">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Интерьер Urban Elegance">
+            <span class="apartment-number">01</span>
+            <span class="apartment-category">PRIVATE RESIDENCE</span>
+        </div>
+        <div class="card-content">
+            <div class="section-label">RESIDENCE 01</div>
+            <h3>Urban Elegance</h3>
+            <p class="apartment-description">
+                Элегантное пространство с объединённой кухней-гостиной и отдельной спальней.
+            </p>
+            <div class="apartment-info">
+                <span>1 спальня</span>
+                <span>52 м²</span>
+            </div>
+            <div class="apartment-bottom">
+                <div>
+                    <span class="apartment-price-label">СТОИМОСТЬ</span>
+                    <div class="apartment-price">18 900 000 ₽</div>
+                </div>
+                <a href="#apartment-01" class="apartment-link">↗</a>
+            </div>
+            <a href="#apartment-01" class="apartment-full-link">СМОТРЕТЬ ПЛАНИРОВКУ</a>
+        </div>
+    </article>
+
+    <article class="card apartment-card">
+        <div class="apartment-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Интерьер Modern Heritage">
+            <span class="apartment-number">02</span>
+            <span class="apartment-category">FAMILY RESIDENCE</span>
+        </div>
+        <div class="card-content">
+            <div class="section-label">RESIDENCE 02</div>
+            <h3>Modern Heritage</h3>
+            <p class="apartment-description">
+                Просторная семейная резиденция с двумя спальнями и большой гостиной.
+            </p>
+            <div class="apartment-info">
+                <span>2 спальни</span>
+                <span>78 м²</span>
+            </div>
+            <div class="apartment-bottom">
+                <div>
+                    <span class="apartment-price-label">СТОИМОСТЬ</span>
+                    <div class="apartment-price">27 500 000 ₽</div>
+                </div>
+                <a href="#apartment-02" class="apartment-link">↗</a>
+            </div>
+            <a href="#apartment-02" class="apartment-full-link">СМОТРЕТЬ ПЛАНИРОВКУ</a>
+        </div>
+    </article>
+
+    <article class="card apartment-card">
+        <div class="apartment-image">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Интерьер Sunset Signature">
+            <span class="apartment-number">03</span>
+            <span class="apartment-category">SIGNATURE RESIDENCE</span>
+        </div>
+        <div class="card-content">
+            <div class="section-label">RESIDENCE 03</div>
+            <h3>Sunset Signature</h3>
+            <p class="apartment-description">
+                Просторная резиденция с мастер-спальней, кабинетом и большой общей зоной.
+            </p>
+            <div class="apartment-info">
+                <span>3 спальни</span>
+                <span>112 м²</span>
+            </div>
+            <div class="apartment-bottom">
+                <div>
+                    <span class="apartment-price-label">СТОИМОСТЬ</span>
+                    <div class="apartment-price">39 800 000 ₽</div>
+                </div>
+                <a href="#apartment-03" class="apartment-link">↗</a>
+            </div>
+            <a href="#apartment-03" class="apartment-full-link">СМОТРЕТЬ ПЛАНИРОВКУ</a>
+        </div>
+    </article>
+
+</div>
+</section>
+
+<section class="section apartment-details">
+    <div class="section-heading">
+        <div class="section-label">02 / ПЛАНИРОВКИ</div>
+        <h2 class="section-title">Продуманное пространство.</h2>
+        <p class="section-text">Схематичные демонстрационные планировки трёх резиденций.</p>
+    </div>
+
+    <div class="apartment-detail" id="apartment-01">
+        <div>
+            <div class="section-label">RESIDENCE 01</div>
+            <h2 class="section-title">Urban Elegance</h2>
+            <p class="section-text">52 м² · 1 спальня · 1 санузел</p>
+            <div class="apartment-price">18 900 000 ₽</div>
+            <p class="section-text">Кухня-гостиная, спальня, ванная комната и прихожая.</p>
+        </div>
+        <div class="floorplan">
+            <svg viewBox="0 0 500 340" role="img" aria-label="Схематичная планировка квартиры Urban Elegance">
+                <rect x="35" y="30" width="430" height="280" fill="#29251f" stroke="#c4a27e" stroke-width="5"/>
+                <rect x="35" y="30" width="265" height="170" fill="#51402f" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="300" y="30" width="165" height="170" fill="#363c35" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="35" y="200" width="160" height="110" fill="#38332c" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="195" y="200" width="270" height="110" fill="#474036" stroke="#c4a27e" stroke-width="3"/>
+                <g fill="#eee3d3" font-size="15" text-anchor="middle" font-family="sans-serif">
+                    <text x="165" y="112">ГОСТИНАЯ</text>
+                    <text x="382" y="112">СПАЛЬНЯ</text>
+                    <text x="115" y="255">ВАННАЯ</text>
+                    <text x="330" y="255">ПРИХОЖАЯ</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="apartment-detail" id="apartment-02">
+        <div>
+            <div class="section-label">RESIDENCE 02</div>
+            <h2 class="section-title">Modern Heritage</h2>
+            <p class="section-text">78 м² · 2 спальни · 2 санузла</p>
+            <div class="apartment-price">27 500 000 ₽</div>
+            <p class="section-text">Просторная гостиная, кухня, две спальни, два санузла и прихожая.</p>
+        </div>
+        <div class="floorplan">
+            <svg viewBox="0 0 500 340" role="img" aria-label="Схематичная планировка квартиры Modern Heritage">
+                <rect x="35" y="30" width="430" height="280" fill="#29251f" stroke="#c4a27e" stroke-width="5"/>
+                <rect x="35" y="30" width="230" height="150" fill="#51402f" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="265" y="30" width="200" height="150" fill="#363c35" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="35" y="180" width="175" height="130" fill="#38332c" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="210" y="180" width="155" height="130" fill="#474036" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="365" y="180" width="100" height="130" fill="#51402f" stroke="#c4a27e" stroke-width="3"/>
+                <g fill="#eee3d3" font-size="13" text-anchor="middle" font-family="sans-serif">
+                    <text x="150" y="110">ГОСТИНАЯ</text>
+                    <text x="365" y="110">СПАЛЬНЯ 1</text>
+                    <text x="120" y="250">СПАЛЬНЯ 2</text>
+                    <text x="285" y="250">КУХНЯ</text>
+                    <text x="415" y="250">С/У</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="apartment-detail" id="apartment-03">
+        <div>
+            <div class="section-label">RESIDENCE 03</div>
+            <h2 class="section-title">Sunset Signature</h2>
+            <p class="section-text">112 м² · 3 спальни · 2 санузла</p>
+            <div class="apartment-price">39 800 000 ₽</div>
+            <p class="section-text">Большая общая зона, мастер-спальня, две дополнительные комнаты, кабинет и два санузла.</p>
+        </div>
+        <div class="floorplan">
+            <svg viewBox="0 0 500 340" role="img" aria-label="Схематичная планировка квартиры Sunset Signature">
+                <rect x="25" y="25" width="450" height="290" fill="#29251f" stroke="#c4a27e" stroke-width="5"/>
+                <rect x="25" y="25" width="240" height="160" fill="#51402f" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="265" y="25" width="210" height="135" fill="#363c35" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="25" y="185" width="150" height="130" fill="#38332c" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="175" y="185" width="150" height="130" fill="#474036" stroke="#c4a27e" stroke-width="3"/>
+                <rect x="325" y="160" width="150" height="155" fill="#51402f" stroke="#c4a27e" stroke-width="3"/>
+                <g fill="#eee3d3" font-size="12" text-anchor="middle" font-family="sans-serif">
+                    <text x="145" y="105">ГОСТИНАЯ</text>
+                    <text x="370" y="100">МАСТЕР</text>
+                    <text x="100" y="250">СПАЛЬНЯ 2</text>
+                    <text x="250" y="250">КАБИНЕТ</text>
+                    <text x="400" y="245">СПАЛЬНЯ 3</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section class="home-cta">
+    <div class="section-label">ВАША РЕЗИДЕНЦИЯ ЖДЁТ</div>
+    <h2>Давайте обсудим<br>ваш будущий дом.</h2>
+    <p>Оставьте заявку, чтобы узнать подробности о проекте.</p>
+    <a href="{{ url_for('contacts') }}" class="btn-primary">ОСТАВИТЬ ЗАЯВКУ ↗</a>
+</section>
+
+{% endblock %}

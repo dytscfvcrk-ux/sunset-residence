@@ -1,0 +1,154 @@
+
+{% extends "base.html" %}
+
+{% block title %}SUNSET RESIDENCE — Жизнь в гармонии с собой{% endblock %}
+
+{% block content %}
+
+<section class="hero-home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <span class="section-label">МОСКВА · ПРЕМИАЛЬНАЯ НЕДВИЖИМОСТЬ</span>
+        <h1>Искусство жить<br><em>по-своему.</em></h1>
+        <p>SUNSET RESIDENCE — камерная коллекция резиденций, где архитектура встречается с природой, а приватность становится частью повседневной жизни.</p>
+        <div class="hero-actions">
+            <a href="{{ url_for('apartments') }}" class="btn-primary">ВЫБРАТЬ КВАРТИРУ ↗</a>
+            <a href="{{ url_for('about') }}" class="btn-outline">О ПРОЕКТЕ</a>
+        </div>
+    </div>
+    <div class="hero-caption">
+        <span>01 / 04</span>
+        <span>АРХИТЕКТУРА НОВОГО ПОКОЛЕНИЯ</span>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <strong>4</strong>
+        <span>ЭТАЖА</span>
+    </div>
+    <div class="feature">
+        <strong>3</strong>
+        <span>КОЛЛЕКЦИИ ПЛАНИРОВОК</span>
+    </div>
+    <div class="feature">
+        <strong>01</strong>
+        <span>ПРИВАТНАЯ ТЕРРИТОРИЯ</span>
+    </div>
+    <div class="feature">
+        <strong>∞</strong>
+        <span>ВОЗМОЖНОСТЕЙ</span>
+    </div>
+</section>
+
+<section class="section">
+    <div class="grid-2">
+        <div>
+            <div class="section-label">01 / ФИЛОСОФИЯ ПРОЕКТА</div>
+            <h2 class="section-title">Дом, который отражает ваш характер.</h2>
+            <p class="section-text">
+                SUNSET RESIDENCE — пространство для тех, кто ценит архитектурную эстетику,
+                тишину и внимание к деталям. Всего четыре этажа, выразительные фасады
+                из натуральных фактур и продуманная территория создают особую атмосферу.
+            </p>
+            <br>
+            <a href="{{ url_for('about') }}" class="apartment-link">ПОЗНАКОМИТЬСЯ С ПРОЕКТОМ ↗</a>
+        </div>
+        <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Современная архитектура и натуральные материалы">
+        </div>
+    </div>
+</section>
+
+<section class="section home-architecture">
+    <div class="section-heading">
+        <div class="section-label">02 / АРХИТЕКТУРА</div>
+        <h2 class="section-title">Современная форма. Вечные материалы.</h2>
+        <p class="section-text">
+            Графитовые фасады, тёплые оттенки дерева, панорамное остекление
+            и архитектурная подсветка формируют узнаваемый облик резиденции.
+        </p>
+    </div>
+
+    <div class="grid-3">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Современный фасад">
+            <div class="card-content">
+                <h3>Выразительные фасады</h3>
+                <p>Сочетание тёмного камня, дерева и больших оконных плоскостей.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Интерьер с натуральным деревом">
+            <div class="card-content">
+                <h3>Тактильная эстетика</h3>
+                <p>Натуральные фактуры и спокойная палитра в каждой детали.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Современная резиденция">
+            <div class="card-content">
+                <h3>Камерный масштаб</h3>
+                <p>Четыре этажа и атмосфера приватного пространства.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section home-lifestyle">
+    <div class="grid-2">
+        <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&q=85" alt="Благоустроенная территория">
+        </div>
+        <div>
+            <div class="section-label">03 / ПРОСТРАНСТВО ДЛЯ ЖИЗНИ</div>
+            <h2 class="section-title">Всё важное — рядом.</h2>
+            <p class="section-text">
+                Продуманная инфраструктура, образовательная среда для детей,
+                места для отдыха и повседневные сервисы формируют комфортный
+                ритм жизни резидентов.
+            </p>
+            <br>
+            <a href="{{ url_for('infrastructure') }}" class="apartment-link">ИЗУЧИТЬ ИНФРАСТРУКТУРУ ↗</a>
+        </div>
+    </div>
+</section>
+
+<section class="section home-education">
+    <div class="section-heading">
+        <div class="section-label">04 / СЕМЕЙНАЯ СРЕДА</div>
+        <h2 class="section-title">Пространство, в котором растут мечты.</h2>
+        <p class="section-text">
+            Образовательная среда для самых важных людей в вашей жизни.
+            В концепции проекта предусмотрены школа и детский сад.
+        </p>
+    </div>
+
+    <div class="grid-2">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=85" alt="Современная школа">
+            <div class="card-content">
+                <h3>Школа</h3>
+                <p>Пространство для обучения, развития и новых открытий.</p>
+                <a href="{{ url_for('education') }}" class="apartment-link">ПОДРОБНЕЕ ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=85" alt="Дети в игровой среде">
+            <div class="card-content">
+                <h3>Детский сад</h3>
+                <p>Уютная атмосфера, забота и пространство для первых открытий.</p>
+                <a href="{{ url_for('education') }}" class="apartment-link">ПОДРОБНЕЕ ↗</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-cta">
+    <div class="section-label">ВАША НОВАЯ ИСТОРИЯ</div>
+    <h2>Выберите пространство<br>для своей жизни.</h2>
+    <p>Откройте коллекцию резиденций SUNSET.</p>
+    <a href="{{ url_for('apartments') }}" class="btn-primary">КУПИТЬ КВАРТИРУ ↗</a>
+</section>
+
+{% endblock %}

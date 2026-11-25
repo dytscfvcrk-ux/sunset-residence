@@ -1,0 +1,99 @@
+
+{% extends "base.html" %}
+
+{% block title %}Контакты — SUNSET RESIDENCE{% endblock %}
+
+{% block content %}
+
+<section class="page-hero contacts-hero">
+    <div class="breadcrumbs">ГЛАВНАЯ / КОНТАКТЫ</div>
+    <div class="section-label">CONTACT & PRIVATE SALES</div>
+    <h1>Начните свою<br>историю с SUNSET.</h1>
+    <p class="section-text">Мы будем рады познакомить вас с проектом.</p>
+</section>
+
+<section class="section contacts-section">
+    <div class="grid-2">
+        <div>
+            <div class="section-label">01 / ОТДЕЛ ПРОДАЖ</div>
+            <h2 class="section-title">Давайте обсудим вашу будущую резиденцию.</h2>
+            <p class="section-text">
+                Оставьте свои контактные данные, и представитель
+                демонстрационного проекта свяжется с вами.
+                Вы сможете узнать подробнее о планировках,
+                концепции и вариантах приобретения квартиры.
+            </p>
+
+            <div class="contact-details">
+                <div>
+                    <span>ЛОКАЦИЯ</span>
+                    <p>Москва, Россия</p>
+                </div>
+                <div>
+                    <span>ФОРМАТ ОБРАЩЕНИЯ</span>
+                    <p>Консультация по проекту</p>
+                </div>
+                <div>
+                    <span>ПРОЕКТ</span>
+                    <p>SUNSET RESIDENCE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrap">
+            <div class="section-label">ОСТАВИТЬ ЗАЯВКУ</div>
+            <h3>Заполните форму</h3>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Номер телефона" required>
+                <input type="email" name="email" placeholder="Электронная почта">
+                <textarea name="message" placeholder="Что вас интересует?"></textarea>
+
+                <label class="consent">
+                    <input type="checkbox" name="consent" required>
+                    <span>Я согласен(на) на обработку данных в рамках демонстрационного проекта.</span>
+                </label>
+
+                <button type="submit" class="btn-primary">ОТПРАВИТЬ ЗАЯВКУ ↗</button>
+            </form>
+
+            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-extra">
+    <div class="section-heading">
+        <div class="section-label">02 / ДЛЯ ВАШЕГО УДОБСТВА</div>
+        <h2 class="section-title">Вопросы, которые мы поможем решить.</h2>
+    </div>
+
+    <div class="grid-3">
+        <div class="card">
+            <div class="card-content">
+                <h3>Ипотека</h3>
+                <p>Информация о возможных вариантах финансирования покупки.</p>
+                <a href="#contactForm" class="apartment-link">ЗАДАТЬ ВОПРОС ↗</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Аренда</h3>
+                <p>Обсудим интересующие вас вопросы по аренде резиденций.</p>
+                <a href="#contactForm" class="apartment-link">ОБСУДИТЬ ↗</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Карьера</h3>
+                <p>Возможности сотрудничества и работы в команде проекта.</p>
+                <a href="#contactForm" class="apartment-link">СВЯЗАТЬСЯ ↗</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

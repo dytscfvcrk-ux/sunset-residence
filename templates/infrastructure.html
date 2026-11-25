@@ -1,0 +1,165 @@
+
+{% extends "base.html" %}
+
+{% block title %}Инфраструктура — SUNSET RESIDENCE{% endblock %}
+
+{% block content %}
+
+<section class="page-hero infrastructure-hero">
+    <div class="breadcrumbs">ГЛАВНАЯ / ИНФРАСТРУКТУРА</div>
+    <div class="section-label">LIFESTYLE & SURROUNDINGS</div>
+    <h1>Всё для жизни.<br>Всё рядом.</h1>
+    <p class="section-text">Пространство, в котором каждый день наполнен возможностями.</p>
+</section>
+
+<section class="section">
+    <div class="grid-2">
+        <div>
+            <div class="section-label">01 / ГОРОДСКАЯ СРЕДА</div>
+            <h2 class="section-title">Комфорт начинается за порогом.</h2>
+            <p class="section-text">
+                Концепция SUNSET RESIDENCE предполагает гармоничное
+                сочетание приватной территории и городской инфраструктуры.
+                Повседневные маршруты, места отдыха, спорт и сервисы
+                становятся частью единого жизненного пространства.
+            </p>
+        </div>
+        <div class="image-frame">
+            <img src="{{ url_for('static', filename='images/sunset-infrastructure.png') }}" alt="Архитектурный фасад SUNSET RESIDENCE">
+        </div>
+    </div>
+</section>
+
+<section class="section infrastructure-grid">
+    <div class="section-heading">
+        <div class="section-label">02 / РЯДОМ С ВАМИ</div>
+        <h2 class="section-title">Важные составляющие комфортной жизни.</h2>
+    </div>
+
+    <div class="grid-3">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/sunset-park.png') }}" alt="Ландшафтный парк SUNSET RESIDENCE">
+            <div class="card-content">
+                <h3>Парки и прогулки</h3>
+                <p>Зелёные маршруты, прогулки на свежем воздухе и время для себя.</p>
+            </div>
+        </div>
+<div class="card">
+    <img src="{{ url_for('static', filename='images/sunset-fitness.png') }}?v=3" alt="Фитнес-клуб SUNSET RESIDENCE">
+    <div class="card-content">
+        <h3>Спорт и wellness</h3>
+        <p>Пространства для активности, тренировок и заботы о себе.</p>
+    </div>
+</div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Ресторан">
+            <div class="card-content">
+                <h3>Рестораны и кафе</h3>
+                <p>Места для встреч, неспешных завтраков и приятных вечеров.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=85" alt="Бутик">
+            <div class="card-content">
+                <h3>Магазины и сервисы</h3>
+                <p>Повседневные покупки и необходимые услуги.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85" alt="Медицинский центр">
+            <div class="card-content">
+                <h3>Медицина</h3>
+                <p>Доступ к медицинским и оздоровительным услугам.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Современное рабочее пространство">
+            <div class="card-content">
+                <h3>Работа и бизнес</h3>
+                <p>Пространства для продуктивности и деловых встреч.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parking-feature">
+    <div class="parking-symbol">
+        <span>P</span>
+    </div>
+
+    <div class="parking-heading">
+        <div class="section-label">SUNSET RESIDENCE / COMFORT</div>
+        <h2>Подземный паркинг</h2>
+        <p>Комфортное и безопасное пространство для вашего автомобиля.</p>
+    </div>
+
+    <div class="parking-benefits">
+        <div class="parking-benefit">
+            <span>◇</span>
+            <p>Контроль доступа<br>и безопасность</p>
+        </div>
+
+        <div class="parking-benefit">
+            <span>▱</span>
+            <p>Просторные<br>машино-места</p>
+        </div>
+
+        <div class="parking-benefit">
+            <span>↟</span>
+            <p>Прямой доступ<br>к лифтам</p>
+        </div>
+
+        <div class="parking-benefit">
+            <span>◷</span>
+            <p>Комфорт<br>круглый год</p>
+        </div>
+    </div>
+</section>
+
+<section class="section infrastructure-family">
+    <div class="grid-2">
+        <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&q=85" alt="Уютная благоустроенная территория">
+        </div>
+        <div>
+            <div class="section-label">03 / СЕМЕЙНЫЙ КОМФОРТ</div>
+            <h2 class="section-title">Для каждого поколения.</h2>
+            <p class="section-text">
+                Важная часть концепции — комфортная среда для семей.
+                Школа, детский сад, прогулочные пространства и места
+                для отдыха формируют основу повседневной жизни.
+            </p>
+            <br>
+            <a href="{{ url_for('education') }}" class="apartment-link">ШКОЛА И ДЕТСКИЙ САД ↗</a>
+        </div>
+    </div>
+</section>
+
+<section class="home-cta">
+    <div class="section-label">SUNSET RESIDENCE</div>
+    <h2>Город возможностей.<br>Ваше личное пространство.</h2>
+    <p>Познакомьтесь с коллекцией резиденций.</p>
+    <a href="{{ url_for('apartments') }}" class="btn-primary">ВЫБРАТЬ КВАРТИРУ ↗</a>
+</section>
+
+<section class="section winter-gallery">
+    <div class="section-label">SUNSET RESIDENCE / WINTER EDITION</div>
+    <h2 class="section-title">Особенная атмосфера каждого сезона.</h2>
+    <p class="section-text">
+        Тёплый свет окон, заснеженные аллеи и уютные пространства
+        создают особенное настроение зимнего SUNSET.
+    </p>
+
+    <div class="winter-image">
+        <img
+            src="{{ url_for('static', filename='images/sunset-winter.png') }}"
+            alt="Зимний двор SUNSET RESIDENCE"
+        >
+    </div>
+</section>
+
+{% endblock %}
